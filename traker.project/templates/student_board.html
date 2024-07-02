@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Student Grade Tracker</title>
+    <link href="/static/styles1.css" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>Student Dashboard</h1>
+    <hr>
+    <h2>Information about your account</h2>
+    <div class="grades-container">
+    <p>Your username is: {{ user.username }}</p>
+    <p>Your email is: {{ user.email }}</p>
+    <p>Your phone number is: {{ user.phone }}</p>
+    <p>Your address is: {{ user.address }}</p>
+    <hr>
+    </div>
+    <h2>Grades for taken courses</h2>
+    {% for grade in grades %}
+        <div class="grades-container">
+        <p>Course Name: {{ grade.course_name }}</p>
+        <p>Grade: {{ grade.grade }}</p>
+        <p>Date: {{ grade.date }}</p>
+        <p>Teacher's Name: {{ grade.teacher_name }}</p>
+        <hr>
+        </div>
+    {% endfor %}
+    
+    <a href="/logout">Logout</a>
+    
+</body>
+</html> 

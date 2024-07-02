@@ -1,0 +1,127 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 15px;
+    margin: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+h1 {
+    color: #0acdbc;
+}
+h2 {
+    color: #0acdbc;
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button,
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #0acdbc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+button:hover,
+button[type="submit"]:hover {
+    background-color: #0e8a77;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    margin-bottom: 8px;
+    color: white;
+    background-color: #0acdbc;
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #0e8a77;
+}
+
+/* Utility and structural styles */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
+hr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #0acdbc;
+    width: 100%;
+    max-width: 500px;
+
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1, p, a, input, button {
+        font-size: 14px;
+    }
+
+    a, input, button {
+        padding: 8px 16px;
+    }
+}
+
+/* Styles for the grades container */
+.grades-container {
+    margin: 0px;
+    padding: 6px;
+}
+
+/* Styling individual grade entries */
+.grade {
+    padding: 10px;
+    margin-bottom: 5px;  /* Adds space between grade entries */
+    background-color: #f9f9f9; /* Light background for each grade */
+}
+
+/* Removes any borders that might be set elsewhere */
+.grade, .grades-container {
+    border: none;
+}

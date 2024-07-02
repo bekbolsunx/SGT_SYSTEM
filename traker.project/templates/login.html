@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='bek.png')}}">
+    <title>Login - Student Grade Tracker</title>
+    <link href="/static/styles1.css" rel="stylesheet">
+    
+</head>
+<body>
+    <h1>Login</h1>
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button id="loginBtn">Enter</button>
+    </div>
+    <div>
+        <button id="switchToAdmin">Admin Panel</button>
+    </div>
+    <script src="../static/script.js"></script>
+</body>
+</html>
