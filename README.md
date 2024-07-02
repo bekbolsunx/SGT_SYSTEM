@@ -7,5 +7,9 @@
 - admin can add new users. 
 - ⁠student can log-in and see the grades.
 
-Backend: Python language. Frontend: JavaScript, HTML, css 
-Hosting : pythonanywhere.com
+## Backend:
+Python language. 
+## Frontend:
+JavaScript, HTML, css 
+## Hosting : 
+pythonanywhere.com
